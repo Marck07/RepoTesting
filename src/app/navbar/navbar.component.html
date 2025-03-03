@@ -1,0 +1,116 @@
+<div class="grid" style="height: 100%; margin: 0;">
+  <!-- Button visible only mobile -->
+  <div class="col-1-middle button-mobile-container">
+    <button mat-icon-button color="primary" style="color: #FFF!important;"
+            aria-label="open/close menu"
+            (click)="showMenu()">
+        <mat-icon style="font-size: 45px;">menu</mat-icon>
+      </button>
+  </div>
+  <div class="col-3_sm-11-middle" style="padding-bottom: 0; cursor: pointer;" (click)="goHome()">
+    <h1 align="center" style="height: 100%;
+                      margin: 0;
+                      font-size: 44px;
+                      font-weight: 600;
+                      letter-spacing: 10px; color: #FFF;">AIEC</h1>
+  </div>
+  <div class="grid col-5_md-8_sm-12 menu-mobile-off"
+       [ngClass]="{'menu-mobile-on': !hideMenu, 'menu-mobile-off': hideMenu}"
+       data-push-left="off-4_md-1">
+    <div class="col-3_sm-12" style="padding-bottom: 0;">
+      <button mat-button class="menu-button" [matMenuTriggerFor]="menuSuministros">Suministros</button>
+      <mat-menu #menuSuministros="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="menuRefacciones">Refacciones</button>
+        <button mat-menu-item [matMenuTriggerFor]="menuValvulas">Válvulas</button>
+        <button mat-menu-item [matMenuTriggerFor]="menuEquipos">Equipos</button>
+        <button mat-menu-item [matMenuTriggerFor]="menuCables">Cables</button>
+        <button mat-menu-item [matMenuTriggerFor]="menuSensores">Sensores</button>
+        <button mat-menu-item>Herramientas Industriales</button>
+        <button mat-menu-item>Bombas Hidráulicas</button>
+        <button mat-menu-item>Refacciones de Robots</button>
+        <button mat-menu-item>CNC Fanuc</button>
+      </mat-menu>
+      <mat-menu #menuRefacciones="matMenu">
+        <button mat-menu-item>Mecánicas</button>
+        <button mat-menu-item>Neumáticas</button>
+        <button mat-menu-item>Eléctricas</button>
+        <button mat-menu-item>Electrónicas</button>
+      </mat-menu>
+
+      <mat-menu #menuValvulas="matMenu">
+        <button mat-menu-item>Check</button>
+        <button mat-menu-item>Hidráulica</button>
+        <button mat-menu-item>De Alivio</button>
+        <button mat-menu-item>Mariposa</button>
+      </mat-menu>
+
+      <mat-menu #menuEquipos="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="subMenuEquElec">Électricos</button>
+        <button mat-menu-item>Mécanicos</button>
+        <button mat-menu-item>Electrónicos</button>
+        <button mat-menu-item>Instrumentación</button>
+        <button mat-menu-item>Metrología</button>
+      </mat-menu>
+
+      <mat-menu #subMenuEquElec="matMenu">
+        <button mat-menu-item>PLC's</button>
+        <button mat-menu-item>Tarjetas</button>
+        <button mat-menu-item>Módulos</button>
+        <button mat-menu-item>Fuentes</button>
+        <button mat-menu-item>Servo Amplificadores</button>
+      </mat-menu>
+
+      <mat-menu #menuCables="matMenu">
+        <button mat-menu-item>Eléctrico</button>
+        <button mat-menu-item>Instrumentación</button>
+        <button mat-menu-item>Control</button>
+      </mat-menu>
+
+      <mat-menu #menuSensores="matMenu">
+        <button mat-menu-item>Inductivos</button>
+        <button mat-menu-item>Capacitivos</button>
+        <button mat-menu-item>Encoders</button>
+      </mat-menu>
+    </div>
+    <div class="col-3_sm-12" style="padding-bottom: 0;">
+      <button mat-button class="menu-button" [matMenuTriggerFor]="menuSoluciones">Soluciones</button>
+
+      <mat-menu #menuSoluciones="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="menuMantenimientos">Servicio de Mantenimiento</button>
+        <button mat-menu-item [matMenuTriggerFor]="menuReparaciones">Reparaciones</button>
+        <button mat-menu-item>Mantenimiento y calibración a válvulas de seguridad</button>
+      </mat-menu>
+
+      <mat-menu #menuMantenimientos="matMenu">
+        <button mat-menu-item>Equipos de instrumentación Industrial</button>
+        <button mat-menu-item>válvulas de control</button>
+      </mat-menu>
+
+      <mat-menu #menuReparaciones="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="menuServos">Servo amplificadores</button>
+        <button mat-menu-item>Motores Eléctricos</button>
+        <button mat-menu-item>Bombas Hidráulicas</button>
+        <button mat-menu-item>Tarjetas electrónicas</button>
+      </mat-menu>
+
+      <mat-menu #menuServos="matMenu">
+        <button mat-menu-item>SIEMENS</button>
+        <button mat-menu-item>ABB</button>
+        <button mat-menu-item>SHNEIDER</button>
+        <button mat-menu-item>MOELLER</button>
+        <button mat-menu-item>EATON</button>
+        <button mat-menu-item>OMRON</button>
+        <button mat-menu-item>MITSUBISHI</button>
+        <button mat-menu-item>FANUC</button>
+        <button mat-menu-item>ROCKWELL</button>
+        <button mat-menu-item>ALLEN-BRADLEY</button>
+      </mat-menu>
+    </div>
+    <div class="col-3_sm-12" style="padding-bottom: 0;" (click)="goContact()">
+      <button mat-button class="menu-button">Contacto</button>
+    </div>
+    <div class="col-3_sm-12" style="padding-bottom: 0;">
+      <button mat-button class="menu-button" (click)="goUs()">Nosotros</button>
+    </div>
+  </div>
+</div>

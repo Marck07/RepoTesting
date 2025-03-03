@@ -1,0 +1,19 @@
+.background-about-us {
+    width: 100%;
+    background-size: cover;
+    background-image: url("../../assets/images/farmacia2.jpg");
+}
+
+.about-us-title {
+  position: relative;
+  max-width: 300px;
+}
+.about-us-title::before {
+  content : "";
+  position: absolute;
+  left    : 0;
+  bottom  : 0;
+  height  : 1px;
+  width   : 100%;  /* or 100px */
+  border-bottom: 5px solid #f66d2f;
+}

@@ -1,0 +1,42 @@
+.footer {
+  //  position: fixed;
+   left: 0;
+   bottom: 0;
+  //  width: 100%;
+   background-color: #afafaf;
+   color: white;
+   padding: 20px;
+   box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.65);
+  //  text-align: center;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.65);
+}
+
+.facebook:hover {
+  width: 35px;
+  cursor: pointer;
+  box-shadow: 0 0 2rem 3px rgb(0, 45, 255);
+}
+
+.instagram:hover {
+  width: 35px;
+  cursor: pointer;
+  box-shadow: 0 0 2rem 3px  rgb(249, 20, 127);
+}
+
+.twitter:hover {
+  width: 35px;
+  cursor: pointer;
+  box-shadow: 0 0 2rem 3px rgb(0, 233, 255);
+}
+
+.linkedin:hover {
+  width: 35px;
+  cursor: pointer;
+  box-shadow: 0 0 2rem 4px rgb(0, 174, 255);
+}

@@ -1,0 +1,41 @@
+.button-mobile-container {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .button-mobile-container {
+    display: grid;
+    padding-bottom: 0;
+  }
+  .menu-mobile-off {
+    height: 0px;
+    position: absolute;
+    top: -140px;
+    background: rgba(60, 60, 60, 0.97);
+    margin: 0;
+    padding: 0;
+    transition: height 1s, top 0.5s;
+    div {
+      padding: 0;
+    }
+    button {
+      width: 100%;
+    }
+  }
+
+  .menu-mobile-on {
+    height: 270px;
+    position: absolute;
+    top: 70px;
+    background: rgba(60, 60, 60, 0.97);
+    margin: 0;
+    padding: 0;
+    transition: height 1s, top 1.5s;
+    div {
+      padding: 0;
+    }
+    button {
+      width: 100%;
+    }
+  }
+}

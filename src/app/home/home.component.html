@@ -1,0 +1,49 @@
+<nav class="fixed-nav-bar">
+  <app-navbar></app-navbar>
+</nav>
+<div [@animationInOut]="'in'" class="container backWhite black responsive-height-container W100">
+  <div  class="carousel-container">
+    <owl-carousel-o [options]="customOptions" class="W100 H100">
+      <ng-template carouselSlide>
+        <div align="center" class="grid-middle carousel-text-container">
+          <h1 class="col-12 cHand">
+            AIEC SUMINISTROS <br>
+            <span>Automatización, Instrumentación, Électronica y Control</span>
+          </h1>
+        </div>
+        <img src="../../assets/images/doctor1.jpg">
+      </ng-template>
+      <ng-template carouselSlide>
+        <div align="center" class="grid-middle carousel-text-container">
+          <h1 class="col-12 cHand">
+            Lo encontramos por ti. <br>
+            <span>¿Buscas otro equipo?, cuéntanos y te apoyaremos.</span>
+          </h1>
+        </div>
+        <img src="../../assets/images/doctor2.jpg">
+      </ng-template>
+      <ng-template carouselSlide>
+        <div align="center" class="grid-middle carousel-text-container">
+          <h1 class="col-12 cHand">
+            Ofrecemos Soluciones. <br>
+            <span>Optimas, ágiles y adecuadas a sus necesidades.</span>
+          </h1>
+        </div>
+        <img src="../../assets/images/doctor3.jpg">
+      </ng-template>
+      <ng-template carouselSlide>
+        <div align="center" class="grid-middle carousel-text-container">
+          <h1 class="col-12 cHand">
+            Nuestra Propuesta, Su Satisfacción. <br>
+            <span>Ofrecemos atención, calidad y conocimiento.</span>
+          </h1>
+        </div>
+        <img src="../../assets/images/doctor4.jpg">
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</div>
+
+<div class="" style="height: 1000px; width: 100%; background: #fafafa;">
+
+</div>
